@@ -236,7 +236,7 @@ class HustNetworkGUI(QtWidgets.QWidget):
                 self.config.write(f)
 
         # 删除旧的 _MEIxxxxxx 文件夹
-        cur_dir = os.path.dirname(sys.argv[0])
+        cur_dir = os.path.dirname(os.path.abspath(__file__))
         mei_dirs = {}
         max_ctime = 0
         for file_name in os.listdir(cur_dir):

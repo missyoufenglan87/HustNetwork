@@ -12,15 +12,15 @@
 
 ```bash
 python3 HustNetwork.py hust-network.conf
-python3 HustNetwork_GUI.py
+python3 HustNetwork_GUI.py 
+pythonw HustNetwork_GUI.py 
 HustNetwork_GUI.exe
 ```
 
 其中 hust-network.conf 中内容依次为校园网账号和密码
-
+GUI初始生成config.ini，忘记填入后续手动填入即可
 程序需保持一直运行，推荐使用 screen 或者 systemctl 配置成 service 挂在后台
 
 ## 其他相关项目推荐
-
 - Rust 二进制文件：https://github.com/black-binary/hust-network-login
 - Shell 版本：https://github.com/jyi2ya/hust-network-login-sh
